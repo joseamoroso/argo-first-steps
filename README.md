@@ -22,7 +22,7 @@ helm repo add argo https://argoproj.github.io/argo-helm
 ```
 
 ```sh
-helm install argocd argo/argo-cd
+helm install argocd argo/argo-cd  -n argocd
 ```
 
 ## Access ArgoCD UI
@@ -60,7 +60,7 @@ kubectl apply -f bootstrap-argo-apps.yaml
 ### Uninstall ArgoCD chart
 
 ```sh
-helm install argocd argo/argo-cd -n argocd
+helm uninstall argocd -n argocd
 ```
 
 ### Remove ArgoCD namespace

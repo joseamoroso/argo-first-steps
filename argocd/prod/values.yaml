@@ -1,0 +1,7 @@
+env: prod
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/joseamoroso/argo-first-steps
+    targetRevision: main
